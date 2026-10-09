@@ -1,25 +1,634 @@
 <!doctype html>
 <html lang="es-PE">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Evo | Página no encontrada</title>
-<meta name="robots" content="noindex">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Evo | Dale dirección a tu negocio</title>
+<meta name="description" content="Descubre qué impulsar, dónde invertir y qué está generando ventas. Evo conecta la información de tu negocio para ayudarte a decidir y actuar con claridad. Piloto acompañado para marcas que venden productos online.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Evo | Dale dirección a tu negocio.">
+<meta property="og:description" content="Tu operación de publicidad, conectada con tus objetivos de negocio. Piloto acompañado, precios en soles.">
+<link rel="canonical" href="https://francocanales-asdf.github.io/evo-landing/">
+<meta property="og:url" content="https://francocanales-asdf.github.io/evo-landing/">
+<meta property="og:locale" content="es_PE">
+<meta name="theme-color" content="#ffffff">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23fff'/%3E%3Ccircle cx='16' cy='16' r='9' fill='%23ff5a49'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
 <style>
-body{margin:0;min-height:100vh;display:grid;place-items:center;background:#fff;color:#273a5e;font-family:'IBM Plex Sans',system-ui,sans-serif;padding:24px;text-align:center}
-.wm{display:inline-flex;align-items:center;gap:.4rem;font-weight:700;font-size:1.4rem;letter-spacing:-.05em;text-decoration:none}.wm i{width:.7em;height:.7em;border-radius:50%;background:#ff5a49}
-.eb{display:block;font:500 .72rem ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase;color:#5f6f8d;margin:1.6rem 0 .8rem}.eb::before{content:'// ';color:#ff5a49}
-h1{font-size:2rem;letter-spacing:-.02em;margin:0 0 .5rem}p{color:#5f6f8d;margin:0 0 1.4rem}
-a.btn{display:inline-block;background:#ff5a49;color:#fff;padding:.8rem 1.25rem;border-radius:6px;font-weight:600;text-decoration:none}a.btn:hover{background:#ed4938}
+:root{--ink:#273a5e;--muted:#5a6a88;--line:#e2e7f0;--red:#ff5a49;--red-ink:#c7362a;--btn:#d93a2b;--btn-h:#c23022;--cyan:#00b7dc;--green:#20c997;--t-blue:#eff9ff;--t-green:#e3fff7;--t-violet:#f1efff;--maxw:1140px;--sans:'IBM Plex Sans',system-ui,-apple-system,'Segoe UI',sans-serif;--mono:'DM Mono',ui-monospace,SFMono-Regular,Menlo,monospace;--shadow:0 12px 34px rgba(43,62,93,.1);--r:6px;--ease:cubic-bezier(.2,.75,.25,1)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;background:#fff;color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+h1,h2,h3{line-height:1.12;letter-spacing:-.02em;margin:0 0 .5em}
+h1{font-size:clamp(2.3rem,6.4vw,3.9rem);font-weight:700}
+h2{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:700}
+h3{font-size:1.15rem;font-weight:600}
+p{margin:0 0 1em}
+.wrap{width:min(var(--maxw),calc(100vw - 32px));margin-inline:auto}
+.eyebrow{display:block;color:var(--muted);font:500 .72rem/1.3 var(--mono);letter-spacing:.12em;text-transform:uppercase;margin-bottom:.9rem}.eyebrow::before{content:'// ';color:var(--red-ink)}
+:where(a,button,summary,input,select):focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:8px;z-index:50;background:#fff;padding:.5rem .8rem;border-radius:var(--r)}.skip:focus{left:8px}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.8rem 1.25rem;border-radius:var(--r);font-weight:600;text-decoration:none;font-size:.98rem;font-family:inherit;line-height:1.3;cursor:pointer;transition:background .2s,color .2s,border-color .2s;border:1.5px solid transparent}
+.btn-red{background:var(--btn);color:#fff}.btn-red:hover{background:var(--btn-h)}
+.btn-ghost{border-color:#cdd5e3;color:var(--ink);background:#fff}.btn-ghost:hover{border-color:var(--ink)}
+.btn-sm{padding:.55rem .95rem;font-size:.9rem}
+/* nav */
+.nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav > .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:64px}
+.wordmark{display:inline-flex;align-items:center;gap:.4rem;font-weight:700;font-size:1.35rem;letter-spacing:-.05em;text-decoration:none}.wordmark i{width:.7em;height:.7em;border-radius:50%;background:var(--red)}
+.nav-links{display:none;gap:1.5rem;margin:0;padding:0;list-style:none}.nav-links a{text-decoration:none;font-size:.95rem;font-weight:500;color:var(--muted)}.nav-links a:hover{color:var(--ink)}
+.nav-toggle{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border:1.5px solid var(--line);border-radius:var(--r);background:#fff;color:var(--ink);cursor:pointer}
+.nav-right{display:flex;align-items:center;gap:.6rem}
+.nav-menu{display:none;border-top:1px solid var(--line);background:#fff}.nav-menu.open{display:block}.nav-menu ul{list-style:none;margin:0;padding:.6rem 0}.nav-menu a{display:block;padding:.7rem 0;text-decoration:none;font-weight:500}
+@media(max-width:420px){.nav-right .btn-sm{padding:.5rem .7rem;font-size:.84rem}}
+@media(min-width:900px){.nav-links{display:flex}.nav-toggle,.nav-menu{display:none!important}}
+/* hero */
+.hero{padding:3rem 0 3rem;background:linear-gradient(180deg,var(--t-blue),#fff 75%)}
+.hero-grid{display:grid;gap:2.4rem}
+.hero .lead{font-size:1.18rem;color:var(--ink);max-width:36rem}
+.hero .scope{font-size:1rem;color:var(--muted);max-width:35rem;margin-bottom:0}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.7rem;margin:1.6rem 0 1.2rem}
+.hero-note{font-size:.92rem;color:var(--muted);max-width:34rem;margin:0;padding-left:.8rem;border-left:3px solid var(--green)}
+@media(min-width:900px){.hero{padding:5rem 0 4.5rem}.hero-grid{grid-template-columns:1.1fr .9fr;align-items:center}}
+/* complete demo */
+.demo-journey{display:grid;gap:1rem;counter-reset:demo-step}@media(min-width:820px){.demo-journey{grid-template-columns:repeat(3,1fr)}}
+.demo-step{counter-increment:demo-step;border:1px solid var(--line);border-radius:var(--r);padding:1.35rem;background:#fff;display:flex;flex-direction:column;align-items:flex-start}
+.demo-step::before{content:'0' counter(demo-step);font:500 .78rem/1 var(--mono);color:var(--red-ink);margin-bottom:.8rem}
+.demo-step p{color:var(--muted);font-size:.95rem;flex:1}.demo-step .btn{margin-top:.35rem}
+.demo-access{margin-top:1rem;padding:1rem 1.2rem;border-left:3px solid var(--green);background:var(--t-green);font-size:.94rem}
+/* sheet */
+.sheet{background:#213050;color:#e8eef8;border-radius:var(--r);padding:1.4rem;box-shadow:var(--shadow);font-size:.95rem;line-height:1.45}
+.sheet-top{display:flex;justify-content:space-between;gap:1rem;color:#a9b8d2;font:500 .72rem/1.3 var(--mono);letter-spacing:.1em;text-transform:uppercase}
+.sheet-rule{height:1px;background:rgba(255,255,255,.14);margin:.9rem 0}
+.sheet dl{margin:0;display:grid;gap:1rem}
+.sheet dt{font-weight:600;color:#fff;font-size:1.02rem}.sheet dt b{color:#ff8d80;font:500 .8rem var(--mono);margin-right:.5rem}
+.sheet dd{margin:.25rem 0 0;color:#c4d0e4;font-size:.9rem}
+.sheet-foot{margin:1rem 0 0;font:400 .72rem/1.5 var(--mono);color:#a9b8d2;letter-spacing:.03em}
+/* sections */
+section{padding:3.5rem 0}@media(min-width:900px){section{padding:5rem 0}}
+.intro{max-width:46rem;margin-bottom:2rem}.intro p{color:var(--muted);font-size:1.05rem}
+.band{background:var(--t-blue)}.band-v{background:var(--t-violet)}
+.outcomes{display:grid;gap:1.1rem}@media(min-width:700px){.outcomes{grid-template-columns:repeat(2,1fr)}}@media(min-width:1040px){.outcomes{grid-template-columns:repeat(6,1fr)}.outcomes .card{grid-column:span 2}.outcomes .card:nth-child(4){grid-column:2 / span 2}}
+.card{border:1px solid var(--line);border-radius:var(--r);padding:1.4rem;background:#fff}
+.card p{margin:0;color:var(--muted);font-size:.97rem}
+.card .num{display:block;font:500 .8rem var(--mono);color:var(--red-ink);margin-bottom:.6rem}
+/* steps */
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:1rem}
+@media(min-width:700px){.steps{grid-template-columns:repeat(2,1fr)}}@media(min-width:1040px){.steps{grid-template-columns:repeat(5,1fr)}}
+.steps li{background:#fff;border-radius:var(--r);padding:1.3rem;box-shadow:var(--shadow)}
+.steps li > span{display:inline-grid;place-items:center;width:2rem;height:2rem;border-radius:50%;background:var(--btn);color:#fff;font:500 .9rem var(--mono);margin-bottom:.8rem}
+.steps h3{font-size:1.05rem}.steps p{margin:0;color:var(--muted);font-size:.94rem}
+.cycle{margin-top:1.4rem;padding:1rem 1.2rem;border-radius:var(--r);background:#fff;font-size:.97rem;border-left:3px solid var(--cyan)}
+/* one experience */
+.one{border:1.5px solid var(--ink);border-radius:var(--r);background:#fff;overflow:hidden}
+.one-head{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.6rem 1rem;padding:1rem 1.3rem;background:var(--ink);color:#fff}
+.one-head strong{font-size:1.05rem}.one-head span{font:500 .74rem/1.3 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:#c9d3e6}
+.one-body{display:grid}@media(min-width:860px){.one-body{grid-template-columns:repeat(3,1fr)}}
+.one-part{padding:1.3rem;border-top:1px solid var(--line)}.one-part:first-child{border-top:0}
+@media(min-width:860px){.one-part{border-top:0}.one-part + .one-part{border-left:1px solid var(--line)}}
+.one-part h3{display:flex;align-items:center;gap:.55rem;font-size:1.05rem}
+.one-part h3 svg{flex:none;width:20px;height:20px;color:var(--red-ink)}
+.one-part p{margin:0;color:var(--muted);font-size:.95rem}
+.one-part .cond{margin-top:.8rem;font-size:.85rem;border-top:1px dashed var(--line);padding-top:.6rem}
+.one-foot{margin:0;padding:1rem 1.3rem;background:var(--t-blue);font-size:.95rem;border-top:1px solid var(--line)}
+/* example */
+.example{display:grid;gap:1.6rem}@media(min-width:940px){.example{grid-template-columns:.9fr 1.1fr;align-items:start}}
+.demo{border:1px solid var(--line);border-radius:var(--r);background:#fff;box-shadow:var(--shadow);overflow:hidden;margin:0}
+.demo-bar{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding:.8rem 1.1rem;background:#213050;color:#e8eef8;font:500 .74rem/1.3 var(--mono);letter-spacing:.06em;text-transform:uppercase}
+.demo-bar em{font-style:normal;background:#ffd166;color:#213050;padding:.15rem .45rem;border-radius:3px}
+.demo-body{padding:1.2rem 1.1rem}
+.status{list-style:none;margin:0 0 1.2rem;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:0}
+.status li{position:relative;text-align:center;font:500 .66rem/1.25 var(--mono);color:var(--muted);padding:1.4rem .1rem 0}
+.status li::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:.9rem;height:.9rem;border-radius:50%;background:#fff;border:2px solid #9aa6bd;z-index:1}
+.status li::after{content:'';position:absolute;top:.4rem;left:50%;width:100%;height:2px;background:#d5dbe6}
+.status li:last-child::after{display:none}
+.status li.done{color:var(--ink)}.status li.done::before{background:var(--green);border-color:#119a72}.status li.done::after{background:var(--green)}
+.status li.now{color:var(--ink);font-weight:600}.status li.now::before{background:var(--red);border-color:var(--red-ink)}
+.fields{margin:0;display:grid;border-top:1px solid var(--line)}
+.fields div{display:grid;grid-template-columns:8.5rem 1fr;gap:.8rem;padding:.6rem 0;border-bottom:1px solid var(--line);font-size:.93rem}
+.fields dt{color:var(--muted);font:500 .74rem/1.6 var(--mono);text-transform:uppercase;letter-spacing:.05em}.fields dd{margin:0}
+@media(max-width:480px){.fields div{grid-template-columns:1fr;gap:.1rem}}
+.demo-actions{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;margin-top:1rem}
+.demo-actions .fake{display:inline-flex;padding:.55rem .95rem;border-radius:var(--r);font-weight:600;font-size:.9rem;background:var(--btn);color:#fff}
+.demo-actions .fake.ghost{background:#fff;color:var(--ink);border:1.5px solid #cdd5e3}
+.demo-actions small{color:var(--muted);font-size:.82rem}
+.timeline{list-style:none;margin:0;padding:0;display:grid;gap:.9rem}
+.timeline li{display:grid;grid-template-columns:auto 1fr;gap:.8rem;align-items:start}
+.pill{display:inline-block;min-width:7.6rem;text-align:center;font:500 .68rem/1 var(--mono);letter-spacing:.05em;text-transform:uppercase;padding:.42rem .5rem;border-radius:99px;background:var(--t-blue);color:#075d70}
+.pill.p2{background:#fff1e0;color:#7a4200}.pill.p3{background:#fff;color:#463a99}.pill.p4{background:#ffe9e6;color:#a32b20}.pill.p5{background:var(--t-green);color:#0b5e45}
+.timeline p{margin:0;font-size:.96rem}.timeline p span{display:block;color:var(--muted);font-size:.9rem}
+@media(max-width:420px){.timeline li{grid-template-columns:1fr;gap:.35rem}.pill{justify-self:start}}
+/* pricing */
+.plans{display:grid;gap:1.6rem}@media(min-width:960px){.plans{grid-template-columns:repeat(3,1fr);align-items:stretch;gap:1.1rem}}
+.plan{position:relative;background:#fff;border-radius:var(--r);padding:1.5rem;box-shadow:var(--shadow);display:flex;flex-direction:column;border:1.5px solid var(--line)}
+.plan.featured{border:2px solid var(--red)}
+.plan .flag{position:absolute;top:-.8rem;left:1.5rem;background:var(--btn);color:#fff;font:500 .68rem/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;padding:.42rem .6rem;border-radius:4px}
+.plan h3{font-size:1.3rem;margin-bottom:.3rem}
+.plan .for{color:var(--muted);font-size:.93rem;margin-bottom:1rem}@media(min-width:960px){.plan .for{min-height:2.9em}}
+.price{font-size:2.1rem;font-weight:700;letter-spacing:-.03em;margin:0;line-height:1.1}.price small{font-size:.92rem;font-weight:500;color:var(--muted);letter-spacing:0}
+.setup{font:400 .84rem var(--mono);color:var(--muted);margin:.35rem 0 1.1rem}
+.limits{margin:0 0 1rem;display:grid;border-top:1px solid var(--line)}
+.limits div{display:flex;justify-content:space-between;gap:1rem;padding:.5rem 0;border-bottom:1px solid var(--line);font-size:.92rem}
+.limits dt{color:var(--muted)}.limits dd{margin:0;font-weight:600;text-align:right;white-space:nowrap}
+.plan .inc{font:500 .72rem/1.3 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:.2rem 0 .4rem}
+.plan ul{list-style:none;margin:0 0 1.3rem;padding:0;font-size:.93rem}.plan li{padding:.3rem 0 .3rem 1.2rem;position:relative}.plan li::before{content:'—';color:var(--red-ink);position:absolute;left:0}
+.plan .btn{margin-top:auto;justify-content:center;text-align:center}
+.common{margin-top:1.6rem;display:grid;gap:1.1rem}@media(min-width:900px){.common{grid-template-columns:.8fr 1.2fr}}
+.common .card h3{font-size:1.05rem}
+.common ul{margin:0;padding-left:1.1rem;font-size:.94rem;color:var(--ink)}.common li{margin:.4rem 0}
+.common li strong{font-weight:600}
+.pricenote{margin-top:1.2rem;font-size:.9rem;color:var(--muted)}
+/* fit / scope */
+.two{display:grid;gap:1.4rem}@media(min-width:860px){.two{grid-template-columns:1fr 1fr}}
+.checks{list-style:none;margin:0;padding:0;display:grid;gap:.6rem}
+.checks li{padding:.8rem 1rem .8rem 2.6rem;position:relative;border-radius:var(--r);background:#fff}
+.checks.green li{background:var(--t-green)}
+.checks li::before{content:'';position:absolute;left:1rem;top:1.15rem;width:.7rem;height:.38rem;border-left:2px solid #0b5e45;border-bottom:2px solid #0b5e45;transform:rotate(-45deg)}
+.checks.out li{background:#f4f6f9}.checks.out li::before{width:.7rem;height:2px;border:0;background:#76839b;transform:none;top:1.3rem}
+/* faq */
+.fgrid{display:grid;gap:2rem}@media(min-width:900px){.fgrid{grid-template-columns:.7fr 1.3fr}}
+details{border-top:1px solid var(--line)}details:last-child{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;padding:1rem 0;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:1rem;align-items:center}summary::-webkit-details-marker{display:none}
+summary::after{content:'+';color:var(--red-ink);font:500 1.2rem var(--mono);flex:none}details[open] summary::after{content:'–'}
+details p{margin:0 0 1rem;color:var(--muted);font-size:.97rem}
+/* request */
+.request{background:var(--ink);color:#fff}
+.request .eyebrow{color:#c3cde0}.request .eyebrow::before{color:#ff8d80}
+.request-grid{display:grid;gap:2rem}@media(min-width:940px){.request-grid{grid-template-columns:.8fr 1.2fr;align-items:start}}
+.request-copy p{color:#d3dbea}
+.request-copy ul{margin:0 0 1rem;padding-left:1.1rem;color:#d3dbea;font-size:.95rem}.request-copy li{margin:.3rem 0}
+.form{background:#fff;color:var(--ink);border-radius:var(--r);padding:1.4rem;display:grid;gap:1rem;box-shadow:var(--shadow)}
+@media(min-width:640px){.form{grid-template-columns:1fr 1fr}.form .full{grid-column:1 / -1}}
+.field{display:grid;gap:.35rem;min-width:0;align-content:start}
+.field > label,.field legend{font-weight:600;font-size:.92rem;padding:0}
+.field input,.field select{width:100%;font:inherit;font-size:1rem;color:var(--ink);background:#fff;border:1.5px solid #8c98b0;border-radius:var(--r);padding:.65rem .75rem;min-height:44px}
+.field input:focus,.field select:focus{border-color:var(--ink)}
+.field input[aria-invalid="true"]{border-color:var(--red-ink)}
+fieldset.field{border:0;margin:0;padding:0;min-width:0}
+.opts{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.15rem}
+.opts label{display:inline-flex;align-items:center;gap:.45rem;border:1.5px solid #8c98b0;border-radius:99px;padding:.45rem .8rem;font-size:.92rem;cursor:pointer;min-height:42px}
+.opts input{width:1.1rem;height:1.1rem;min-height:0;padding:0;margin:0;accent-color:var(--btn)}
+.opts label:has(input:checked){border-color:var(--ink);background:var(--t-blue)}
+.opts label:has(input:focus-visible){outline:3px solid var(--red);outline-offset:2px}
+.req{color:var(--red-ink)}
+.form-foot{display:grid;gap:.7rem}
+.form-foot .btn{justify-content:center}@media(min-width:640px){.form-foot .btn{justify-self:start}}
+.form-foot p{margin:0;font-size:.88rem;color:var(--muted)}
+.form-foot p.req{color:var(--red-ink);font-weight:600}
+.form-status{padding:.7rem .9rem;border-radius:var(--r);background:var(--t-green);color:#0b5e45!important}
+.form-alt a{font-weight:600;color:var(--ink)}
+footer{padding:2rem 0;border-top:1px solid var(--line);font-size:.88rem;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:.8rem 1.6rem;align-items:center;justify-content:space-between}
+footer ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:1.2rem}footer a{text-decoration:none}footer a:hover{color:var(--ink);text-decoration:underline}
+/* reveal */
+.reveal{transition:opacity .5s var(--ease),transform .5s var(--ease)}html.js .reveal{opacity:0;transform:translateY(14px)}html.js .reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}html.js .reveal{opacity:1;transform:none}}
 </style>
 </head>
 <body>
-<div>
-  <a class="wm" href="./"><i aria-hidden="true"></i>evo</a>
-  <span class="eb">Error 404</span>
-  <h1>Esta página no existe.</h1>
-  <p>El enlace puede estar mal escrito o la página se movió.</p>
-  <a class="btn" href="./">Volver al inicio</a>
-</div>
+<a class="skip" href="#main">Ir al contenido</a>
+
+<nav class="nav" aria-label="Principal">
+  <div class="wrap">
+    <a class="wordmark" href="#" aria-label="Evo, inicio"><i aria-hidden="true"></i>evo</a>
+    <ul class="nav-links">
+      <li><a href="#que-obtienes">Qué obtienes</a></li>
+      <li><a href="#como-funciona">Cómo funciona</a></li>
+      <li><a href="#planes">Planes</a></li>
+      <li><a href="#para-quien">Para quién</a></li>
+      <li><a href="#preguntas">Preguntas</a></li>
+    </ul>
+    <div class="nav-right">
+      <a class="btn btn-red btn-sm" href="#solicitud">Solicitar piloto</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menú"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 5h14M3 10h14M3 15h14"/></svg></button>
+    </div>
+  </div>
+  <div class="nav-menu" id="nav-menu"><div class="wrap"><ul>
+    <li><a href="#que-obtienes">Qué obtienes</a></li>
+    <li><a href="#como-funciona">Cómo funciona</a></li>
+    <li><a href="#planes">Planes</a></li>
+    <li><a href="#para-quien">Para quién</a></li>
+    <li><a href="#preguntas">Preguntas</a></li>
+  </ul></div></div>
+</nav>
+
+<main id="main">
+<header class="hero"><div class="wrap">
+  <div class="hero-grid">
+    <div>
+      <span class="eyebrow">Piloto acompañado · venta de productos online</span>
+      <h1>Dale dirección a tu negocio.</h1>
+      <p class="lead">Descubre qué impulsar, dónde invertir y qué está generando ventas. Evo conecta la información de tu negocio para ayudarte a decidir y actuar con claridad.</p>
+      <p class="scope">Tu operación de publicidad, conectada con tus objetivos de negocio. Para marcas que ya tienen contenido y quieren convertirlo en oportunidades de venta.</p>
+      <div class="hero-actions">
+        <a class="btn btn-red" href="#demo-completa">Probar la demo completa <span aria-hidden="true">&#8594;</span></a>
+        <a class="btn btn-ghost" href="#como-funciona">Ver cómo funciona</a>
+      </div>
+      <p class="hero-note">Tú apruebas las decisiones importantes. Tus cuentas y tu presupuesto siguen bajo tu control, y la inversión publicitaria se paga directamente a cada plataforma.</p>
+    </div>
+    <aside class="sheet" aria-label="Las tres preguntas que Evo te ayuda a responder">
+      <div class="sheet-top"><span>Lo que decides con Evo</span><span>Cada semana</span></div>
+      <div class="sheet-rule"></div>
+      <dl>
+        <div><dt><b>01</b>¿Qué impulsar?</dt><dd>Productos u ofertas priorizados, con la razón de cada prioridad.</dd></div>
+        <div><dt><b>02</b>¿Dónde invertir?</dt><dd>Canal y presupuesto propuestos, que tú apruebas o ajustas.</dd></div>
+        <div><dt><b>03</b>¿Qué está generando ventas?</dt><dd>Inversión, conversiones y ventas disponibles, con su fuente y su periodo.</dd></div>
+      </dl>
+      <p class="sheet-foot">Las respuestas dependen de los datos disponibles de cada negocio. Cuando un dato falta, Evo lo dice.</p>
+    </aside>
+  </div>
+</div></header>
+
+<section id="demo-completa" class="reveal"><div class="wrap">
+  <div class="intro"><span class="eyebrow">Demo completa</span><h2>Conversa, entra y comprueba los resultados.</h2><p>El recorrido usa una sola cuenta: lo que Evo conoce por WhatsApp es el mismo contexto que encuentras al hablar con él y revisar el BI.</p></div>
+  <div class="demo-journey">
+    <article class="demo-step"><h3>Conversa por WhatsApp</h3><p>Escríbele a Evo como responsable del negocio y pregúntale cómo va la cuenta o qué necesita decidir.</p><a class="btn btn-ghost" data-demo-whatsapp hidden rel="noopener">Abrir WhatsApp</a></article>
+    <article class="demo-step"><h3>Habla con Evo</h3><p>Entra con <strong>francocanalesrivero@gmail.com</strong>, activa el micrófono y continúa la conversación.</p><a class="btn btn-red" data-demo-app href="https://evo-stage-staging.up.railway.app/app/ui/hablar">Entrar y hablar con Evo</a></article>
+    <article class="demo-step"><h3>Revisa el BI</h3><p>Comprueba ventas, inversión y decisiones con la misma cuenta y los mismos datos de la conversación.</p><a class="btn btn-ghost" data-demo-bi href="https://evo-stage-staging.up.railway.app/app/ui/resultados">Ver resultados</a></article>
+  </div>
+  <p class="demo-access">El acceso se envía por enlace seguro al correo autorizado. El botón de WhatsApp aparecerá cuando el número de demostración de Meta quede conectado.</p>
+</div></section>
+
+<section id="que-obtienes" class="reveal"><div class="wrap">
+  <div class="intro"><span class="eyebrow">Qué obtiene tu negocio</span><h2>Claridad para decidir. Control para aprobar.</h2><p>Evo trabaja con la información y el contenido que tu marca ya tiene, y te entrega decisiones concretas que puedes revisar.</p></div>
+  <div class="outcomes">
+    <article class="card"><span class="num">01</span><h3>Claridad sobre qué impulsar</h3><p>Qué productos u ofertas conviene empujar ahora, con qué objetivo y hacia qué destino.</p></article>
+    <article class="card"><span class="num">02</span><h3>Decisiones de inversión justificadas</h3><p>Cada propuesta de presupuesto explica por qué, con qué datos y qué se revisará después.</p></article>
+    <article class="card"><span class="num">03</span><h3>Campañas preparadas con tu contenido</h3><p>Evo selecciona publicaciones y activos que ya tienes, prepara textos y configuración, y te presenta la campaña lista para revisar.</p></article>
+    <article class="card"><span class="num">04</span><h3>Control sobre las aprobaciones</h3><p>Nada importante se ejecuta sin tu aprobación. Puedes ajustar, pedir cambios o rechazar.</p></article>
+    <article class="card"><span class="num">05</span><h3>Visibilidad de ejecución y resultados</h3><p>Qué se ejecutó, en qué estado está y qué resultados hay disponibles, cada dato con su fuente y sus límites.</p></article>
+  </div>
+</div></section>
+
+<section id="como-funciona" class="band reveal"><div class="wrap">
+  <div class="intro"><span class="eyebrow">Cómo funciona</span><h2>Cinco pasos. Tú decides en cada uno.</h2><p>Evo prepara el trabajo y lo ejecuta dentro de lo que autorizas. En cada paso ves qué se propone y por qué.</p></div>
+  <ol class="steps">
+    <li><span>1</span><h3>Conecta el negocio</h3><p>Objetivos, productos, cuentas publicitarias y fuentes de ventas compatibles. La activación confirma accesos y alcance.</p></li>
+    <li><span>2</span><h3>Revisa el diagnóstico</h3><p>Lo que Evo entendió: oferta, prioridades, restricciones, medición y datos pendientes. Puedes corregirlo.</p></li>
+    <li><span>3</span><h3>Decide la campaña</h3><p>Producto u oferta, contenido existente, canal, presupuesto, destino y forma de medir.</p></li>
+    <li><span>4</span><h3>Aprueba</h3><p>La ejecución ocurre dentro del alcance autorizado. Ves su estado y la confirmación de la plataforma.</p></li>
+    <li><span>5</span><h3>Revisa resultados y siguiente acción</h3><p>Inversión, conversiones y ventas disponibles, y una propuesta justificada para el siguiente cambio.</p></li>
+  </ol>
+  <p class="cycle">El primer ciclo incluye la activación: contexto de la marca, revisión de la medición e inventario de contenido. Los ciclos siguientes reutilizan ese contexto y revisan solo lo que cambió.</p>
+</div></section>
+
+<section id="experiencia" class="reveal"><div class="wrap">
+  <div class="intro"><span class="eyebrow">Una sola experiencia</span><h2>Un mismo Evo, donde te resulte cómodo.</h2><p>No son productos separados. Es la misma cuenta, con el mismo contexto y las mismas aprobaciones.</p></div>
+  <div class="one">
+    <div class="one-head"><strong>Tu cuenta en Evo</strong><span>Contexto, decisiones y resultados compartidos</span></div>
+    <div class="one-body">
+      <div class="one-part">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 20V9"/></svg>Espacio de trabajo</h3>
+        <p>Contexto del negocio, diagnóstico, propuestas, campañas, aprobaciones y próximos pasos.</p>
+      </div>
+      <div class="one-part">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.9A8 8 0 1 1 21 12z"/></svg>Coordinación por WhatsApp</h3>
+        <p>Novedades, solicitudes y decisiones rápidas sin entrar al espacio de trabajo.</p>
+        <p class="cond">Cuando el canal esté habilitado para tu cuenta.</p>
+      </div>
+      <div class="one-part">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>Resultados</h3>
+        <p>Inversión, conversiones y ventas disponibles, con su fuente, su periodo y los límites de la medición.</p>
+      </div>
+    </div>
+    <p class="one-foot">Lo que se decide por cualquiera de las dos vías queda en la misma cuenta, y los resultados se leen sobre las mismas campañas que aprobaste.</p>
+  </div>
+</div></section>
+
+<section id="ejemplo" class="band-v reveal"><div class="wrap example">
+  <div>
+    <span class="eyebrow">Ejemplo ficticio</span>
+    <h2>De un producto a una campaña verificada.</h2>
+    <p style="color:var(--muted)">Marca y producto inventados para mostrar el proceso. No corresponde a ningún cliente ni muestra resultados.</p>
+    <ol class="timeline">
+      <li><span class="pill">Producto</span><p>Una marca ficticia de accesorios elige su botella térmica con stock. <span>Es el foco comercial: objetivo y destino definidos.</span></p></li>
+      <li><span class="pill p2">Activo existente</span><p>Evo encuentra un video vertical que la marca ya publicó. <span>Es apto para el formato y la marca autoriza su uso en publicidad.</span></p></li>
+      <li><span class="pill p3">Propuesta</span><p>Evo propone canal, presupuesto, destino, textos y medición. <span>Explica por qué ese producto y ese canal.</span></p></li>
+      <li><span class="pill p4">Aprobación</span><p>El responsable revisa, ajusta el presupuesto y aprueba. <span>Sin aprobación no se ejecuta.</span></p></li>
+      <li><span class="pill p5">Ejecución verificada</span><p>La campaña se configura y Evo comprueba en la plataforma que quedó como se aprobó. <span>Los resultados se revisan después, con su fuente y su periodo.</span></p></li>
+    </ol>
+  </div>
+  <figure class="demo" aria-label="Vista ficticia de una propuesta de campaña en Evo">
+    <div class="demo-bar"><span>Propuesta de campaña</span><em>Ejemplo ficticio</em></div>
+    <div class="demo-body">
+      <ol class="status" aria-label="Estado de la campaña">
+        <li class="done">Producto</li>
+        <li class="done">Activo</li>
+        <li class="done">Propuesta</li>
+        <li class="now" aria-current="step">Aprobación</li>
+        <li>Verificada</li>
+      </ol>
+      <dl class="fields">
+        <div><dt>Foco</dt><dd>Botella térmica 750 ml · producto con stock</dd></div>
+        <div><dt>Contenido</dt><dd>Video vertical ya publicado por la marca · apto para el formato</dd></div>
+        <div><dt>Canal</dt><dd>Meta Ads</dd></div>
+        <div><dt>Presupuesto</dt><dd>Monto diario propuesto, a confirmar por el responsable</dd></div>
+        <div><dt>Destino</dt><dd>Página del producto en la tienda online</dd></div>
+        <div><dt>Medición</dt><dd>Compras registradas por la tienda · evento pendiente de revisión</dd></div>
+      </dl>
+      <div class="demo-actions" aria-hidden="true"><span class="fake">Aprobar</span><span class="fake ghost">Pedir cambios</span><small>Nada se ejecuta sin aprobación.</small></div>
+    </div>
+  </figure>
+</div></section>
+
+<section id="planes" class="reveal"><div class="wrap">
+  <div class="intro"><span class="eyebrow">Planes del piloto</span><h2>Elige según tus canales y tus focos.</h2><p>Montos mensuales en soles, más IGV. La inversión publicitaria va aparte y se paga directamente a cada plataforma. Son los precios de la etapa de piloto acompañado.</p></div>
+<!-- plans:begin -->
+  <div class="plans">
+    <article class="plan" aria-labelledby="plan-esencial">
+      <h3 id="plan-esencial">Esencial</h3>
+      <p class="for">Para una marca con una oferta y un canal principal.</p>
+      <p class="price">S/690 <small>al mes + IGV</small></p>
+      <p class="setup">Activación única: S/490 + IGV</p>
+      <dl class="limits">
+          <div><dt>Marcas</dt><dd>1</dd></div>
+          <div><dt>Canales publicitarios</dt><dd>1</dd></div>
+          <div><dt>Focos simultáneos</dt><dd>1</dd></div>
+          <div><dt>Experimentos nuevos al mes</dt><dd>Hasta 1</dd></div>
+          <div><dt>Inversión gestionada</dt><dd>Hasta S/5.000/mes</dd></div>
+      </dl>
+      <p class="inc">Incluye:</p>
+      <ul>
+          <li>Contexto de negocio e inventario de activos</li>
+          <li>Preparación, aprobación y seguimiento de campañas</li>
+          <li>Inversión y conversiones disponibles</li>
+          <li>Resumen semanal</li>
+          <li>Soporte de operación</li>
+      </ul>
+      <a class="btn btn-ghost" href="#solicitud" data-plan="Esencial">Solicitar piloto Esencial</a>
+    </article>
+    <article class="plan featured" aria-labelledby="plan-crecimiento">
+      <span class="flag">Recomendado</span>
+      <h3 id="plan-crecimiento">Crecimiento</h3>
+      <p class="for">Para una marca que necesita coordinar productos y canales.</p>
+      <p class="price">S/1.290 <small>al mes + IGV</small></p>
+      <p class="setup">Activación única: S/990 + IGV</p>
+      <dl class="limits">
+          <div><dt>Marcas</dt><dd>1</dd></div>
+          <div><dt>Canales publicitarios</dt><dd>Hasta 2</dd></div>
+          <div><dt>Focos simultáneos</dt><dd>Hasta 3</dd></div>
+          <div><dt>Experimentos nuevos al mes</dt><dd>Hasta 2</dd></div>
+          <div><dt>Inversión gestionada</dt><dd>Hasta S/15.000/mes</dd></div>
+      </dl>
+      <p class="inc">Todo lo de Esencial, y además:</p>
+      <ul>
+          <li>Priorización de productos y revisión competitiva mensual</li>
+          <li>Coordinación de presupuesto entre canales</li>
+          <li>Una fuente compatible de pedidos o ventas</li>
+          <li>Revisión semanal de prioridades</li>
+          <li>Revisión mensual escrita</li>
+      </ul>
+      <a class="btn btn-red" href="#solicitud" data-plan="Crecimiento">Solicitar piloto Crecimiento</a>
+    </article>
+    <article class="plan" aria-labelledby="plan-direccion">
+      <h3 id="plan-direccion">Dirección</h3>
+      <p class="for">Para una marca con catálogo y decisiones comerciales más complejas.</p>
+      <p class="price">S/2.990 <small>al mes + IGV</small></p>
+      <p class="setup">Activación única: S/1.990 + IGV</p>
+      <dl class="limits">
+          <div><dt>Marcas</dt><dd>1</dd></div>
+          <div><dt>Canales publicitarios</dt><dd>Hasta 3</dd></div>
+          <div><dt>Focos simultáneos</dt><dd>Hasta 5</dd></div>
+          <div><dt>Experimentos nuevos al mes</dt><dd>Hasta 4</dd></div>
+          <div><dt>Inversión gestionada</dt><dd>Hasta S/40.000/mes</dd></div>
+      </dl>
+      <p class="inc">Todo lo de Esencial, y además:</p>
+      <ul>
+          <li>Planificación por producto y canal</li>
+          <li>Propuestas de reasignación de presupuesto</li>
+          <li>Contribución y recompra, cuando existan datos suficientes y fuentes compatibles</li>
+          <li>Revisión semanal</li>
+          <li>Reunión mensual de 45 minutos con especialista</li>
+      </ul>
+      <a class="btn btn-ghost" href="#solicitud" data-plan="Dirección">Solicitar piloto Dirección</a>
+    </article>
+  </div>
+  <div class="common">
+    <div class="card">
+      <h3>Qué es un piloto acompañado</h3>
+      <ul>
+        <li>Trabajamos con pocas marcas mientras validamos el servicio.</li>
+        <li>El equipo de Evo acompaña la activación y revisa el trabajo.</li>
+        <li>El alcance, la fecha de inicio y los canales disponibles se acuerdan por escrito antes de empezar.</li>
+        <li>Solicitar un piloto no genera cobro ni suscripción.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Condiciones comunes</h3>
+      <ul>
+        <li><strong>Inversión publicitaria:</strong> Se paga directamente a las plataformas. No está incluida en el plan.</li>
+        <li><strong>Foco:</strong> Un producto, categoría u oferta con objetivo y destino definidos.</li>
+        <li><strong>Experimentos:</strong> Requieren contenido apto y datos suficientes.</li>
+        <li><strong>Canales:</strong> No es obligatorio anunciar en todos los canales del plan. Los canales y conectores disponibles se confirman durante la activación.</li>
+        <li><strong>Activación:</strong> Incluye conexiones compatibles, contexto, revisión de medición y primer plan.</li>
+        <li><strong>Aparte:</strong> Arreglos de tracking, web e integraciones especiales se cotizan aparte.</li>
+        <li><strong>Límites:</strong> Superarlos requiere acordar un cambio de alcance. No hay recargos automáticos y las campañas no se pausan por superar un límite del plan.</li>
+      </ul>
+    </div>
+  </div>
+<!-- plans:end -->
+</div></section>
+
+<section id="para-quien" class="band reveal"><div class="wrap">
+  <div class="intro"><span class="eyebrow">Para quién es</span><h2>Para marcas que venden productos online y ya tienen contenido.</h2><p>El foco inicial del piloto es la venta de productos online.</p></div>
+  <div class="two">
+    <div>
+      <h3>Evo encaja si:</h3>
+      <ul class="checks">
+        <li>Vendes productos online y tienes una tienda o un destino de compra que funciona.</li>
+        <li>Tienes productos u ofertas definidos.</li>
+        <li>Cuentas con contenido propio (fotos, videos o publicaciones) y puedes renovarlo.</li>
+        <li>Quieres decidir con más claridad sin perder el control de las aprobaciones.</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Qué necesitas aportar:</h3>
+      <ul class="checks">
+        <li>Acceso a tus cuentas publicitarias, dado durante la activación.</li>
+        <li>Contenido apto y autorizado para usar en publicidad.</li>
+        <li>Tus objetivos, productos prioritarios y restricciones (stock, márgenes, temporadas).</li>
+        <li>Una fuente de pedidos o ventas compatible, si tu plan la incluye.</li>
+        <li>Una persona responsable que revise y apruebe a tiempo.</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<section id="alcance" class="reveal"><div class="wrap">
+  <div class="intro"><span class="eyebrow">Alcance</span><h2>Qué incluye y qué se contrata aparte.</h2></div>
+  <div class="two">
+    <div>
+      <h3>Incluye</h3>
+      <ul class="checks green">
+        <li>Contexto del negocio e inventario de contenido existente.</li>
+        <li>Priorización y propuestas de campaña dentro del plan.</li>
+        <li>Textos de anuncios y selección de activos existentes, aptos y autorizados.</li>
+        <li>Aprobaciones, ejecución dentro del alcance autorizado y seguimiento.</li>
+        <li>Resultados disponibles, con su fuente y sus límites.</li>
+      </ul>
+      <p class="pricenote">Si falta material apto para una campaña, Evo indica qué hace falta y te lo solicita.</p>
+    </div>
+    <div>
+      <h3>No incluye</h3>
+      <ul class="checks out">
+        <li>Diseño gráfico.</li>
+        <li>Grabación y edición de video.</li>
+        <li>Community management.</li>
+        <li>Atención a compradores.</li>
+        <li>Desarrollo web.</li>
+        <li>Operación integral de CRM.</li>
+        <li>Inversión publicitaria.</li>
+      </ul>
+      <p class="pricenote">Los proyectos adicionales de web, CRM o consultoría se acuerdan por separado con Evo con equipo.</p>
+    </div>
+  </div>
+</div></section>
+
+<section id="preguntas" class="band-v reveal"><div class="wrap fgrid">
+  <div><span class="eyebrow">Preguntas frecuentes</span><h2>Antes de solicitar el piloto.</h2></div>
+  <div>
+    <details open><summary>¿Qué significa que sea un piloto acompañado?</summary><p>Que Evo trabaja con un número reducido de marcas mientras valida el servicio. Acompañamos de cerca la activación y la operación, revisamos el trabajo y ajustamos el proceso contigo.</p></details>
+    <details><summary>¿Evo garantiza ventas o crecimiento?</summary><p>No. Ninguna operación publicitaria puede garantizar ventas ni un retorno mínimo. Evo ofrece decisiones explicadas, ejecución bajo tu aprobación y resultados que puedes comprobar con su fuente.</p></details>
+    <details><summary>¿Sabré exactamente qué anuncio generó cada venta?</summary><p>No siempre. La atribución depende de la medición de cada plataforma y de tu tienda, y tiene límites. Evo muestra cada resultado con su fuente, su periodo y lo que no se puede afirmar.</p></details>
+    <details><summary>¿Evo dirige toda mi empresa?</summary><p>No. Evo se ocupa de la operación de publicidad y de las decisiones comerciales que dependen de ella: qué impulsar, dónde invertir y qué está funcionando. Finanzas, logística, atención y otras áreas siguen en tus manos.</p></details>
+    <details><summary>¿Evo crea fotos o videos?</summary><p>No. Evo trabaja con las publicaciones y los activos que tu marca ya tiene, y prepara textos de anuncios y la configuración de las campañas.</p></details>
+    <details><summary>¿Debo anunciar en todos los canales de mi plan?</summary><p>No. El número de canales es un máximo. Evo propone solo los que tienen sentido para tu negocio. Los canales y conectores disponibles para tu cuenta se confirman durante la activación.</p></details>
+    <details><summary>¿Quién aprueba el presupuesto y los cambios?</summary><p>Tú. Evo propone y explica; las acciones se ejecutan dentro del alcance que autorizas.</p></details>
+    <details><summary>¿Qué es un foco y qué es un experimento?</summary><p>Un foco es un producto, categoría u oferta con objetivo y destino definidos. Un experimento es una prueba nueva, por ejemplo otro contenido u otra audiencia, y requiere contenido apto y datos suficientes para sacar conclusiones.</p></details>
+    <details><summary>¿Qué pasa si supero un límite de mi plan?</summary><p>Lo conversamos y acordamos un cambio de alcance. No hay recargos automáticos y tus campañas no se pausan por superar un límite del plan.</p></details>
+    <details><summary>¿Qué pasa si mi medición está mal configurada?</summary><p>La activación incluye una revisión de la medición y te contamos lo que encontremos. Las reparaciones de tracking, de la web o integraciones especiales se cotizan aparte.</p></details>
+    <details><summary>¿Trabajan con negocios de reservas, como restaurantes?</summary><p>El piloto empieza con venta de productos online. Si tu negocio trabaja con reservas, escríbenos y te diremos con honestidad si hoy podemos ayudarte.</p></details>
+  </div>
+</div></section>
+
+<section id="solicitud" class="request"><div class="wrap request-grid">
+  <div class="request-copy">
+    <span class="eyebrow">Solicitud de piloto</span>
+    <h2>Veamos si Evo encaja con tu negocio.</h2>
+    <p>Cuéntanos lo básico. Al continuar se abre tu correo con el mensaje listo; tú decides si lo envías.</p>
+    <ul>
+      <li>Te respondemos para revisar si el piloto tiene sentido para ti.</li>
+      <li>Solicitar un piloto no genera cobro ni suscripción.</li>
+      <li>No compartas contraseñas ni accesos: se gestionan durante la activación.</li>
+    </ul>
+  </div>
+  <form class="form" id="pilot-form" novalidate>
+    <div class="field"><label for="f-nombre">Nombre <span class="req" aria-hidden="true">*</span></label><input id="f-nombre" name="nombre" autocomplete="name" required></div>
+    <div class="field"><label for="f-negocio">Negocio <span class="req" aria-hidden="true">*</span></label><input id="f-negocio" name="negocio" autocomplete="organization" required></div>
+    <div class="field"><label for="f-web">Web o tienda online</label><input id="f-web" name="web" type="text" inputmode="url" autocomplete="url" placeholder="tumarca.pe"></div>
+    <div class="field"><label for="f-contacto">Correo o WhatsApp de contacto <span class="req" aria-hidden="true">*</span></label><input id="f-contacto" name="contacto" autocomplete="email" required></div>
+    <fieldset class="field full"><legend>Canales donde anuncias hoy</legend>
+      <div class="opts">
+        <label><input type="checkbox" name="canales" value="Meta (Facebook e Instagram)">Meta</label>
+        <label><input type="checkbox" name="canales" value="Google">Google</label>
+        <label><input type="checkbox" name="canales" value="TikTok">TikTok</label>
+        <label><input type="checkbox" name="canales" value="Otro">Otro</label>
+        <label><input type="checkbox" name="canales" value="Todavía no anuncio">Todavía no anuncio</label>
+      </div>
+    </fieldset>
+    <div class="field"><label for="f-inversion">Inversión publicitaria mensual</label>
+      <select id="f-inversion" name="inversion">
+        <option value="">Selecciona un rango</option>
+        <option>Todavía no invierto</option>
+        <option>Menos de S/1.500</option>
+        <option>S/1.500 a S/5.000</option>
+        <option>S/5.000 a S/15.000</option>
+        <option>S/15.000 a S/40.000</option>
+        <option>Más de S/40.000</option>
+      </select></div>
+    <div class="field"><label for="f-contenido">Contenido propio disponible</label>
+      <select id="f-contenido" name="contenido">
+        <option value="">Selecciona una opción</option>
+        <option>Fotos y videos propios, con publicaciones frecuentes</option>
+        <option>Algo de material, publicado de vez en cuando</option>
+        <option>Casi nada todavía</option>
+      </select></div>
+    <div class="field full"><label for="f-plan">Plan de interés</label>
+      <select id="f-plan" name="plan">
+<!-- plan-options:begin -->
+        <option value="">Todavía no lo sé</option>
+        <option value="Esencial">Esencial · S/690 al mes + IGV</option>
+        <option value="Crecimiento">Crecimiento · S/1.290 al mes + IGV</option>
+        <option value="Dirección">Dirección · S/2.990 al mes + IGV</option>
+<!-- plan-options:end -->
+      </select></div>
+    <div class="form-foot full">
+      <button class="btn btn-red" type="submit">Preparar mi solicitud por correo <span aria-hidden="true">&#8594;</span></button>
+      <p id="form-error" class="req" role="alert" hidden></p>
+      <p class="form-status" id="form-status" role="status" hidden>Abrimos tu correo con el mensaje listo. Revísalo y envíalo desde ahí; hasta entonces no nos llega nada.</p>
+      <p class="form-alt">¿No se abrió tu correo? Escríbenos a <a href="mailto:francocanalesrivero@gmail.com?subject=Solicitud%20de%20piloto%20Evo">francocanalesrivero@gmail.com</a>.</p>
+    </div>
+  </form>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <div><a class="wordmark" href="#" style="font-size:1.1rem" aria-label="Evo, inicio"><i aria-hidden="true"></i>evo</a> · Hecho en Lima · © 2026 Evo</div>
+  <ul>
+    <li><a href="#planes">Planes del piloto</a></li>
+    <li><a href="#solicitud">Solicitar piloto</a></li>
+    <li><a href="mailto:francocanalesrivero@gmail.com?subject=Consulta%20sobre%20Evo">francocanalesrivero@gmail.com</a></li>
+  </ul>
+</div></footer>
+
+<script src="./demo-config.js"></script>
+<script>
+(function(){
+  var d=document,h=d.documentElement;
+  var demo=window.EVO_DEMO||{};
+  [['[data-demo-app]','appUrl'],['[data-demo-bi]','biUrl'],['[data-demo-whatsapp]','whatsappUrl']].forEach(function(pair){
+    var el=d.querySelector(pair[0]),url=demo[pair[1]];
+    if(el&&url){el.href=url;el.hidden=false;}
+  });
+  var t=d.querySelector('.nav-toggle'),m=d.getElementById('nav-menu');
+  function closeMenu(){m.classList.remove('open');t.setAttribute('aria-expanded','false');t.setAttribute('aria-label','Abrir menú');}
+  if(t&&m){
+    t.addEventListener('click',function(){var o=m.classList.toggle('open');t.setAttribute('aria-expanded',o);t.setAttribute('aria-label',o?'Cerrar menú':'Abrir menú');});
+    m.addEventListener('click',function(e){if(e.target.tagName==='A')closeMenu();});
+    d.addEventListener('keydown',function(e){if(e.key==='Escape'&&m.classList.contains('open')){closeMenu();t.focus();}});
+  }
+
+  // Los botones de cada plan preseleccionan el plan en la solicitud.
+  d.querySelectorAll('[data-plan]').forEach(function(a){
+    a.addEventListener('click',function(){var s=d.getElementById('f-plan');if(s)s.value=a.getAttribute('data-plan');});
+  });
+
+  // La solicitud se arma como un correo prellenado. Esta página no envía nada.
+  var f=d.getElementById('pilot-form');
+  if(f){
+    f.addEventListener('submit',function(e){
+      e.preventDefault();
+      var err=d.getElementById('form-error'),ok=d.getElementById('form-status');
+      var missing=[].filter.call(f.querySelectorAll('[required]'),function(el){var bad=!el.value.trim();el.setAttribute('aria-invalid',bad);return bad;});
+      if(missing.length){
+        err.textContent='Completa: '+missing.map(function(el){return d.querySelector('label[for="'+el.id+'"]').firstChild.textContent.trim();}).join(', ')+'.';
+        err.hidden=false;ok.hidden=true;missing[0].focus();return;
+      }
+      err.hidden=true;
+      var v=function(n){var el=f.elements[n];return el&&el.value.trim()?el.value.trim():'Sin indicar';};
+      var ch=[].map.call(f.querySelectorAll('input[name="canales"]:checked'),function(c){return c.value;});
+      var plan=f.elements.plan.value||'Todavía no lo sé';
+      var body=['Hola, quiero solicitar un piloto de Evo.','',
+        'Nombre: '+v('nombre'),'Negocio: '+v('negocio'),'Web: '+v('web'),'Contacto: '+v('contacto'),
+        'Canales actuales: '+(ch.length?ch.join(', '):'Sin indicar'),'Inversión publicitaria mensual: '+v('inversion'),
+        'Contenido propio disponible: '+v('contenido'),'Plan de interés: '+plan,'',
+        '(No incluyas contraseñas, accesos ni datos de compradores.)'].join('\n');
+      var subject='Solicitud de piloto Evo'+(f.elements.plan.value?' - '+plan:'');
+      var url='mailto:francocanalesrivero@gmail.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+      f.setAttribute('data-mailto',url);
+      window.location.href=url;
+      ok.hidden=false;
+    });
+  }
+
+  var rm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(rm||!('IntersectionObserver' in window))return;
+  h.classList.add('js');
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px',threshold:.05});
+  d.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+})();
+</script>
 </body>
 </html>
