@@ -245,7 +245,7 @@ footer ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:1.2
   <div class="intro"><span class="eyebrow">Demo completa</span><h2>Conversa, entra y comprueba los resultados.</h2><p>El recorrido usa una sola cuenta: lo que Evo conoce por WhatsApp es el mismo contexto que encuentras al hablar con él y revisar el BI.</p></div>
   <div class="demo-journey">
     <article class="demo-step"><h3>Conversa por WhatsApp</h3><p>Escríbele a Evo como responsable del negocio y pregúntale cómo va la cuenta o qué necesita decidir.</p><a class="btn btn-ghost" data-demo-whatsapp hidden rel="noopener">Abrir WhatsApp</a></article>
-    <article class="demo-step"><h3>Habla con Evo</h3><p>Entra con <strong>francocanalesrivero@gmail.com</strong>, activa el micrófono y continúa la conversación.</p><a class="btn btn-red" data-demo-app href="https://evo-stage-staging.up.railway.app/app/ui/hablar">Entrar y hablar con Evo</a></article>
+    <article class="demo-step"><h3>Habla con Evo</h3><p>Entra con <strong>franco@evo.pe</strong>, activa el micrófono y continúa la conversación.</p><a class="btn btn-red" data-demo-app href="https://evo-stage-staging.up.railway.app/app/ui/hablar">Entrar y hablar con Evo</a></article>
     <article class="demo-step"><h3>Revisa el BI</h3><p>Comprueba ventas, inversión y decisiones con la misma cuenta y los mismos datos de la conversación.</p><a class="btn btn-ghost" data-demo-bi href="https://evo-stage-staging.up.railway.app/app/ui/resultados">Ver resultados</a></article>
   </div>
   <p class="demo-access">El acceso se envía por enlace seguro al correo autorizado. El botón de WhatsApp aparecerá cuando el número de demostración de Meta quede conectado.</p>
@@ -558,7 +558,7 @@ footer ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:1.2
       <button class="btn btn-red" type="submit">Preparar mi solicitud por correo <span aria-hidden="true">&#8594;</span></button>
       <p id="form-error" class="req" role="alert" hidden></p>
       <p class="form-status" id="form-status" role="status" hidden>Abrimos tu correo con el mensaje listo. Revísalo y envíalo desde ahí; hasta entonces no nos llega nada.</p>
-      <p class="form-alt">¿No se abrió tu correo? Escríbenos a <a href="mailto:francocanalesrivero@gmail.com?subject=Solicitud%20de%20piloto%20Evo">francocanalesrivero@gmail.com</a>.</p>
+      <p class="form-alt">¿No se abrió tu correo? Escríbenos a <a href="mailto:franco@evo.pe?subject=Solicitud%20de%20piloto%20Evo">franco@evo.pe</a>.</p>
     </div>
   </form>
 </div></section>
@@ -569,7 +569,7 @@ footer ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:1.2
   <ul>
     <li><a href="#planes">Planes del piloto</a></li>
     <li><a href="#solicitud">Solicitar piloto</a></li>
-    <li><a href="mailto:francocanalesrivero@gmail.com?subject=Consulta%20sobre%20Evo">francocanalesrivero@gmail.com</a></li>
+    <li><a href="mailto:franco@evo.pe?subject=Consulta%20sobre%20Evo">franco@evo.pe</a></li>
   </ul>
 </div></footer>
 
@@ -616,7 +616,7 @@ footer ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:1.2
         'Contenido propio disponible: '+v('contenido'),'Plan de interés: '+plan,'',
         '(No incluyas contraseñas, accesos ni datos de compradores.)'].join('\n');
       var subject='Solicitud de piloto Evo'+(f.elements.plan.value?' - '+plan:'');
-      var url='mailto:francocanalesrivero@gmail.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+      var url='mailto:franco@evo.pe?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
       f.setAttribute('data-mailto',url);
       window.location.href=url;
       ok.hidden=false;
