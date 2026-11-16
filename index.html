@@ -195,6 +195,8 @@ footer ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:1.2
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}html.js .reveal{opacity:1;transform:none}}
 
 /* v2: copy corto */
+.plans.four{grid-template-columns:1fr}@media(min-width:700px){.plans.four{grid-template-columns:repeat(2,1fr)}}@media(min-width:1150px){.plans.four{grid-template-columns:repeat(4,1fr)}}.plan .flag.soon{background:#5a6a88}.plan.soon{opacity:.92}.plan .price small.cur{font-size:1rem;font-weight:600;color:var(--ink);margin-right:.2rem}.plans.four .price{margin-bottom:1.1rem}.plan-note{margin-top:1.2rem;font-size:.92rem;color:var(--muted);max-width:46rem}
+
 .ways{display:grid;gap:1.1rem}@media(min-width:800px){.ways{grid-template-columns:1fr 1fr}}.ways .card h3{font-size:1.25rem}.ways .tag{display:inline-block;font:500 .72rem/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--red-ink);margin-bottom:.7rem}.ways .card p+p{margin-top:.7rem}.ways .price-line{color:var(--ink);font-weight:600}
 
 .how{display:grid;gap:1.1rem}@media(min-width:700px){.how{grid-template-columns:repeat(2,1fr)}}@media(min-width:1040px){.how{grid-template-columns:repeat(4,1fr)}}
@@ -311,54 +313,48 @@ footer ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:1.2
 <section id="formas" class="band-v reveal"><div class="wrap">
   <div class="intro"><span class="eyebrow">Dos formas de trabajar</span><h2>Elige cómo avanzar.</h2><p>Las dos usan la misma plataforma. Cambia quién ejecuta el trabajo.</p></div>
   <div class="ways">
-    <article class="card"><span class="tag">Evo</span><h3>Usa la plataforma</h3><p>Evo prepara tus campañas, te propone qué hacer y te muestra los resultados, con revisión de nuestro equipo. Planes con precio fijo y límites claros.</p><p class="price-line">Desde S/690 al mes + IGV.</p></article>
-    <article class="card"><span class="tag">Evo con equipo</span><h3>Suma nuestro equipo</h3><p>Personas con nombre que se encargan contigo de la publicidad, el contenido, la web y la estrategia. Lo armamos a la medida de tu negocio.</p><p class="price-line">Propuesta a medida.</p></article>
+    <article class="card"><span class="tag">Evo</span><h3>Usa la plataforma</h3><p>Evo prepara tus campañas, te propone qué hacer y te muestra los resultados, con revisión de nuestro equipo. Planes con precio fijo y límites claros.</p><p class="price-line">Desde USD 300 al mes + IGV · Próximamente.</p></article>
+    <article class="card"><span class="tag">Evo con equipo</span><h3>Suma nuestro equipo</h3><p>Personas con nombre que se encargan contigo de la publicidad, el contenido, la web y la estrategia. Lo armamos a la medida de tu negocio.</p><p class="price-line">USD 1.500 al mes + IGV · Disponible hoy.</p></article>
   </div>
 </div></section>
 
 <section id="planes" class="reveal"><div class="wrap">
-  <div class="intro"><span class="eyebrow">Planes de la plataforma</span><h2>Empieza desde S/690.</h2><p>Montos mensuales en soles, más IGV. Los anuncios se pagan aparte, directo a cada plataforma. Solicitar un piloto no genera cobro ni suscripción.</p></div>
-  <div class="plans">
-    <article class="plan" id="plan-esencial">
-      <h3>Esencial</h3><p class="for">Si impulsas una cosa en un solo lugar.</p>
-      <p class="price">S/690 <small>al mes + IGV</small></p><p class="setup">Puesta en marcha única: S/490 + IGV</p>
-      <dl class="limits"><div><dt>Dónde anuncias</dt><dd>1 lugar</dd></div><div><dt>Qué impulsas a la vez</dt><dd>1 producto u oferta</dd></div><div><dt>Anuncios que manejamos</dt><dd>Hasta S/5.000/mes</dd></div></dl>
+  <div class="intro"><span class="eyebrow">Planes</span><h2>Elige tu plan.</h2><p>Montos mensuales en dólares, más IGV. Los anuncios se pagan aparte, directo a cada plataforma. Hoy trabajamos con Evo con equipo; los planes de la plataforma llegan pronto.</p></div>
+  <div class="plans four">
+    <article class="plan soon" id="plan-personas">
+      <span class="flag soon">Próximamente</span>
+      <h3>Para personas</h3><p class="for">Si impulsas una cosa en un solo lugar.</p>
+      <p class="price"><small class="cur">USD</small>300 <small>al mes + IGV</small></p>
       <p class="inc">Incluye</p>
       <ul><li>Revisión de tu negocio y tu contenido</li><li>Anuncios preparados y seguidos</li><li>Un resumen cada semana</li></ul>
-      <a class="btn btn-ghost" href="#solicitud" data-plan="Esencial">Solicitar piloto Esencial</a>
+      <a class="btn btn-ghost" href="#solicitud" data-plan="Personas">Avísame cuando esté</a>
     </article>
-    <article class="plan featured" id="plan-crecimiento">
-      <span class="flag">Recomendado</span>
-      <h3>Crecimiento</h3><p class="for">Si tienes varios productos y anuncias en dos lugares.</p>
-      <p class="price">S/1.290 <small>al mes + IGV</small></p><p class="setup">Puesta en marcha única: S/990 + IGV</p>
-      <dl class="limits"><div><dt>Dónde anuncias</dt><dd>Hasta 2 lugares</dd></div><div><dt>Qué impulsas a la vez</dt><dd>Hasta 3</dd></div><div><dt>Anuncios que manejamos</dt><dd>Hasta S/15.000/mes</dd></div></dl>
-      <p class="inc">Todo lo de Esencial, y además</p>
+    <article class="plan soon" id="plan-emprendedores">
+      <span class="flag soon">Próximamente</span>
+      <h3>Para emprendedores</h3><p class="for">Si tienes varios productos y anuncias en dos lugares.</p>
+      <p class="price"><small class="cur">USD</small>600 <small>al mes + IGV</small></p>
+      <p class="inc">Todo lo anterior, y además</p>
       <ul><li>El presupuesto repartido entre lugares</li><li>Revisión mensual de tu competencia</li><li>Revisión semanal de prioridades</li></ul>
-      <a class="btn btn-red" href="#solicitud" data-plan="Crecimiento">Solicitar piloto Crecimiento</a>
+      <a class="btn btn-ghost" href="#solicitud" data-plan="Emprendedores">Avísame cuando esté</a>
     </article>
-    <article class="plan" id="plan-direccion">
-      <h3>Dirección</h3><p class="for">Si tienes un catálogo grande y decisiones más complejas.</p>
-      <p class="price">S/2.990 <small>al mes + IGV</small></p><p class="setup">Puesta en marcha única: S/1.990 + IGV</p>
-      <dl class="limits"><div><dt>Dónde anuncias</dt><dd>Hasta 3 lugares</dd></div><div><dt>Qué impulsas a la vez</dt><dd>Hasta 5</dd></div><div><dt>Anuncios que manejamos</dt><dd>Hasta S/40.000/mes</dd></div></dl>
-      <p class="inc">Todo lo de Esencial, y además</p>
+    <article class="plan soon" id="plan-crecimiento">
+      <span class="flag soon">Próximamente</span>
+      <h3>Para negocios en crecimiento</h3><p class="for">Si tienes un catálogo grande y decisiones más complejas.</p>
+      <p class="price"><small class="cur">USD</small>900 <small>al mes + IGV</small></p>
+      <p class="inc">Todo lo anterior, y además</p>
       <ul><li>Plan por producto y por lugar</li><li>Propuestas para mover presupuesto</li><li>Reunión mensual de 45 minutos</li></ul>
-      <a class="btn btn-ghost" href="#solicitud" data-plan="Dirección">Solicitar piloto Dirección</a>
+      <a class="btn btn-ghost" href="#solicitud" data-plan="Crecimiento">Avísame cuando esté</a>
+    </article>
+    <article class="plan featured" id="plan-equipo">
+      <span class="flag">Disponible hoy</span>
+      <h3>Evo con equipo</h3><p class="for">Para negocios que ya están en marcha.</p>
+      <p class="price"><small class="cur">USD</small>1.500 <small>al mes + IGV</small></p>
+      <p class="inc">Incluye</p>
+      <ul><li>Un equipo con nombre a cargo de tu publicidad</li><li>Los ocho frentes de trabajo de Evo</li><li>Reporte semanal y reunión mensual</li></ul>
+      <a class="btn btn-red" href="#solicitud" data-plan="Equipo">Conversemos</a>
     </article>
   </div>
-  <details class="more"><summary>Ver el detalle de cada plan y las condiciones</summary>
-    <div class="more-body">
-      <div><h3>Esencial</h3><ul><li>1 marca y hasta 1 prueba nueva al mes</li><li>Inventario del contenido que ya tienes</li><li>Aprobación de anuncios, y resumen de inversión y ventas</li><li>Soporte para lo del día a día</li></ul></div>
-      <div><h3>Crecimiento</h3><ul><li>1 marca y hasta 2 pruebas nuevas al mes</li><li>Orden de prioridad de tus productos</li><li>Un sistema de pedidos o ventas conectado, si es compatible</li><li>Revisión mensual por escrito</li></ul></div>
-      <div><h3>Dirección</h3><ul><li>1 marca y hasta 4 pruebas nuevas al mes</li><li>Cuánto deja cada producto y cuánto recompran, si hay datos suficientes</li><li>Revisión semanal</li></ul></div>
-      <div class="conds">
-        <p><strong>Piloto acompañado.</strong> Trabajamos con pocas marcas mientras afinamos el servicio. El alcance, la fecha de inicio y dónde se anuncia se acuerdan por escrito antes de empezar.</p>
-        <p><strong>Qué impulsas a la vez.</strong> Un producto, una categoría o una oferta, con un objetivo y una página de destino claros. <strong>Prueba nueva:</strong> probar otro contenido u otra audiencia; necesita material apto y datos suficientes.</p>
-        <p><strong>Dónde anuncias.</strong> El número es un máximo: no tienes que anunciar en todos. Los lugares disponibles se confirman al empezar.</p>
-        <p><strong>Puesta en marcha.</strong> Incluye conectar tus cuentas, entender tu negocio, revisar que todo esté bien medido y armar el primer plan. Arreglar cómo se mide, la web o integraciones especiales se cotiza aparte.</p>
-        <p><strong>Si superas un límite.</strong> Lo conversamos y acordamos un cambio. No hay recargos automáticos ni se pausan tus anuncios.</p>
-      </div>
-    </div>
-  </details>
+  <p class="plan-note">El alcance y la fecha de inicio se acuerdan por escrito antes de empezar. Lo que incluye cada plan de la plataforma se confirma al lanzarlo. Escribirnos no genera cobro ni suscripción.</p>
 </div></section>
 
 <section id="demo" class="band reveal"><div class="wrap">
@@ -451,9 +447,10 @@ footer ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:1.2
         <div class="field full"><label for="f-plan">Plan de interés</label>
           <select id="f-plan" name="plan">
             <option value="">Todavía no lo sé</option>
-            <option value="Esencial">Esencial · S/690 al mes + IGV</option>
-            <option value="Crecimiento">Crecimiento · S/1.290 al mes + IGV</option>
-            <option value="Dirección">Dirección · S/2.990 al mes + IGV</option>
+            <option value="Equipo">Evo con equipo · USD 1.500 al mes + IGV</option>
+            <option value="Personas">Para personas · USD 300 (próximamente)</option>
+            <option value="Emprendedores">Para emprendedores · USD 600 (próximamente)</option>
+            <option value="Crecimiento">Para negocios en crecimiento · USD 900 (próximamente)</option>
           </select></div>
       </div>
     </details>
@@ -512,13 +509,13 @@ footer ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:1.2
       err.hidden=true;
       var v=function(n){var el=f.elements[n];return el&&el.value.trim()?el.value.trim():'Sin indicar';};
       var ch=[].map.call(f.querySelectorAll('input[name="canales"]:checked'),function(c){return c.value;});
-      var plan=f.elements.plan.value||'Todavía no lo sé';
-      var body=['Hola, quiero solicitar un piloto de Evo.','',
+      var ps=f.elements.plan,plan=ps.value?ps.options[ps.selectedIndex].text:'Todavía no lo sé';
+      var body=['Hola, quiero conversar con Evo sobre mi negocio.','',
         'Nombre: '+v('nombre'),'Negocio: '+v('negocio'),'Web: '+v('web'),'Contacto: '+v('contacto'),
         'Canales actuales: '+(ch.length?ch.join(', '):'Sin indicar'),'Inversión publicitaria mensual: '+v('inversion'),
         'Contenido propio disponible: '+v('contenido'),'Plan de interés: '+plan,'',
         '(No incluyas contraseñas, accesos ni datos de compradores.)'].join('\n');
-      var subject='Solicitud de piloto Evo'+(f.elements.plan.value?' - '+plan:'');
+      var subject='Consulta Evo'+(ps.value?' - '+plan:'');
       var url='mailto:franco@evo.pe?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
       f.setAttribute('data-mailto',url);
       window.location.href=url;
